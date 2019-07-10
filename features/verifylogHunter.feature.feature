@@ -1,7 +1,7 @@
 @verifylogHunter
-Feature: Verify the logHunter event sent to the splunk when the loginId on the students machine matches with the loginId saved in the S3 bucket.
+Feature: Verify logHunter event sent to the splunk when the loginId on the students machine matches with the loginId saved in the S3 bucket.
 
-Scenario: Verify the logHunter event sent to the splunk when the sign-in or sign-out page is rendered
+Scenario: Verify logHunter event sent to the splunk when the sign-in or sign-out page is rendered
 
 	Given I create a login with TestName "aitup13msec-l1" and FormName "aitup13msec-l1"
 	
@@ -22,7 +22,7 @@ Scenario: Verify the logHunter event sent to the splunk when the sign-in or sign
     
     
  
-Scenario: Verify the logHunter event sent to the splunk when the TestNav app is relaunched
+Scenario: Verify logHunter event sent to the splunk when the TestNav app is relaunched
 
     Given I create a login with TestName "aitup13msec-l1" and FormName "aitup13msec-l1"
 	
@@ -39,7 +39,7 @@ Scenario: Verify the logHunter event sent to the splunk when the TestNav app is 
     And I should see logHunter event added in the splunk
     
 
-Scenario: Verify the logHunter event sent to the splunk when the machine is restarted
+Scenario: Verify logHunter event sent to the splunk when the machine is restarted
 
     Given I create a login with TestName "aitup13msec-l1" and FormName "aitup13msec-l1"
 	
